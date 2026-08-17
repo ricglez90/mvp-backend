@@ -31,9 +31,9 @@ app.post('/api/webhooks/supabase', async (req, res) => {
       
       // 3. Envío del correo usando Resend
       const { data, error } = await resend.emails.send({
-        from: 'Clinica <onboarding@resend.dev>', // Correo por defecto de prueba en Resend
+        from: 'Beguka <onboarding@resend.dev>', // Correo por defecto de prueba en Resend
         to: emailDestino,
-        subject: 'Descarga tu Guía Práctica de Intervención 📚',
+        subject: 'Descarga tu manual gratuito 📚',
         html: `
           <div style="font-family: sans-serif; color: #07002C; max-width: 600px; margin: auto;">
             <h2 style="color: #00abf3;">¡Gracias por tu compra!</h2>
