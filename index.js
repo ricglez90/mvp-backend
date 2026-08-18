@@ -26,7 +26,7 @@ app.post('/api/webhooks/supabase', async (req, res) => {
       const urlPdfGratuitoBN = "https://wsihilmvejerdjrhuaou.supabase.co/storage/v1/object/public/free-manuals/manual_001_bn_lq.pdf";
 
       const { data, error } = await resend.emails.send({
-        from: 'Beguka <manuals@beguka.dev>', 
+        from: 'Beguka <onboarding@resend.dev>', 
         to: emailDestino,
         subject: 'Aquí tienes tu material gratuito 🎁',
         html: `
@@ -71,7 +71,7 @@ app.post('/api/webhooks/supabase', async (req, res) => {
         const urlPdfPagaBN = "#";
 
         const { data, error } = await resend.emails.send({
-          from: 'Beguka <manuals@beguka.dev>',
+          from: 'Beguka <onboarding@resend.dev>',
           to: emailDestino,
           subject: 'Descarga tu Guía Práctica Completa 📚',
           html: `
